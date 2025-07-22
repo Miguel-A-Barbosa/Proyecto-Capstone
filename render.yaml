@@ -1,11 +1,8 @@
 services:
   - type: web
-    name: backend-flask
+    name: nombre-del-backend
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python back/app.py
     env: python
-    buildCommand: ""
-    startCommand: "python back/app.py"
-    envVars:
-      - key: PYTHON_VERSION
-        value: 3.10
-    plan: free
-    autoDeploy: true
+    region: oregon
