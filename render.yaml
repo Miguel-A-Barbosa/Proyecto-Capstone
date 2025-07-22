@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: backend-flask
+    env: python
+    buildCommand: ""
+    startCommand: "python back/app.py"
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.10
+    plan: free
+    autoDeploy: true
