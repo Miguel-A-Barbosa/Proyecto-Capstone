@@ -1,8 +1,0 @@
-services:
-  - type: web
-    name: nombre-del-backend
-    runtime: python
-    buildCommand: pip install -r requirements.txt
-    startCommand: python back/app.py
-    env: python
-    region: oregon

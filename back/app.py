@@ -23,11 +23,6 @@ def home():
 def predict():
     datos = request.get_json()
 
-    print(datos)
-    print(type(datos))
-
-    print(datos['valores'])
-
     valores = transformador(datos['valores'])
 
     scaler = StandardScaler()
